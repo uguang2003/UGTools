@@ -3,6 +3,7 @@
 *.iws
 *.iml
 *.ipr
+/.idea/
 
 ### VS Code ###
 .vscode/
