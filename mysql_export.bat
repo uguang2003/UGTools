@@ -74,7 +74,7 @@ echo （导出过程中会要求输入密码）
 echo.
 
 :: 执行导出，显示进度
-mysqldump -h%host_name% -P%port_num% -u%user_name% -p --single-transaction --routines --triggers --default-character-set=utf8mb4 --verbose %db_name% > %output_file% 2>&1
+mysqldump -h%host_name% -P%port_num% -u%user_name% -p --databases %db_name% > %output_file% 2>&1
 
 if errorlevel 1 (
     echo.
@@ -94,6 +94,8 @@ if errorlevel 1 (
     echo 文件位置: %output_file%
     
     for %%A in (%output_file%) do echo 文件大小: %%~zA 字节
+    echo.
+    echo 导入命令: mysql -u root -p %db_name% ^< %output_file%
     echo.
 )
 

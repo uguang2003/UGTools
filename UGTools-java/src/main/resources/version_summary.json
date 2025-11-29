@@ -1,0 +1,19 @@
+{
+  "currentVersion": "v1.0.0",
+  "versionIndex": {
+    "v0.0.0": "0",
+    "v1.0.0": "1"
+  },
+  "versionDetailList": [
+    {
+      "version": "v1.0.0",
+      "title": "UGTools 正式版本发布",
+      "log": "- 重构关于页面，优化视觉设计\n- 修复系统托盘图标模糊问题\n- 优化右键菜单显示位置\n- 移除托盘 Host 快捷切换功能\n- 个性化品牌和界面风格\n"
+    },
+    {
+      "version": "v0.0.0",
+      "title": "基础版本",
+      "log": "- 继承 MooTool 核心功能\n- 20+ 开发者常用工具集成\n"
+    }
+  ]
+}
