@@ -128,6 +128,6 @@ public class App {
         Init.initAllTab();
         Init.initOthers();
         mainFrame.remove(loadingPanel);
-//        Init.fontSizeGuide();
+        Init.fontSizeGuide();
     }
 }

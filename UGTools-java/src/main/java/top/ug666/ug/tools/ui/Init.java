@@ -228,11 +228,11 @@ public class Init {
      * 引导用户调整字号
      */
     public static void fontSizeGuide() {
-        if (StringUtils.isEmpty(App.config.getProps(FONT_SIZE_INIT_PROP))) {
-            FontSizeAdjustDialog fontSizeAdjustDialog = new FontSizeAdjustDialog();
-            fontSizeAdjustDialog.pack();
-            fontSizeAdjustDialog.setVisible(true);
-        }
+//        if (StringUtils.isEmpty(App.config.getProps(FONT_SIZE_INIT_PROP))) {
+//            FontSizeAdjustDialog fontSizeAdjustDialog = new FontSizeAdjustDialog();
+//            fontSizeAdjustDialog.pack();
+//            fontSizeAdjustDialog.setVisible(true);
+//        }
 
         App.config.setProps(FONT_SIZE_INIT_PROP, "true");
         App.config.save();
